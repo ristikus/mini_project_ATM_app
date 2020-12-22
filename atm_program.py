@@ -52,7 +52,10 @@ while True:
             else:
                 print("Maaf, pin lama yang anda masukkan salah\n")
         elif selected_menu == 0:
-            print("")
+            today = datetime.datetime.now()
+            
+            print("#" + str(random.randint(100000, 1000000)) + "   " + today.strftime("%d-%b-%Y"))
+            print("Saldo anda Rp. " + str(customer.check_balance()) + "\n")
             break
         else:
             pass
