@@ -18,6 +18,7 @@ while True:
             exit()
 
     while True:
+        print("---------------------")
         print("Selamat datang di ATM")
         print("1. Cek Saldo")
         print("2. Debit")
@@ -28,7 +29,7 @@ while True:
         selected_menu = int(input("Pilihan menu: "))
 
         if selected_menu == 1:
-            pass
+            print("Saldo anda Rp. " + str(customer.check_balance()) + "\n")
         elif selected_menu == 2:
             pass
         elif selected_menu == 3:
@@ -36,6 +37,7 @@ while True:
         elif selected_menu == 4:
             pass
         elif selected_menu == 0:
-            exit()
+            print("")
+            break
         else:
             pass
