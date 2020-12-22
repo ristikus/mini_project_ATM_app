@@ -58,4 +58,4 @@ while True:
             print("Saldo anda Rp. " + str(customer.check_balance()) + "\n")
             break
         else:
-            pass
+            print("Menu yang anda masukkan salah. Silakan coba lagi\n")
