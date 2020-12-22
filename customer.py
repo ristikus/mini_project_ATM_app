@@ -3,8 +3,7 @@ from atm_card import ATMCard
 class Customer:
     def __init__(self, id, cust_pin = 1234, cust_balance = 10000):
         self.__id = id
-        self.__cust_pin = 1234
-        self.__cust_balance = 10000
+        self.__atm = ATMCard(cust_pin, cust_balance)
 
     @property
     def id(self):
@@ -20,7 +19,7 @@ class Customer:
 
     @cust_pin.getter
     def cust_pin(self):
-        return self.__cust_pin
+        return self.__atm.default_pin
 
     @property
     def cust_balance(self):
@@ -28,10 +27,10 @@ class Customer:
 
     @cust_balance.getter
     def cust_balance(self):
-        return self.__cust_balance
+        return self.__atm.default_balance
 
     def check_pin(self, input_pin):
-        if self.__cust_pin == input_pin:
+        if self.__atm.default_pin == input_pin:
             return True
         else:
             return False

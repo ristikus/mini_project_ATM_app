@@ -27,4 +27,15 @@ while True:
         
         selected_menu = int(input("Pilihan menu: "))
 
-        
+        if selected_menu == 1:
+            pass
+        elif selected_menu == 2:
+            pass
+        elif selected_menu == 3:
+            pass
+        elif selected_menu == 4:
+            pass
+        elif selected_menu == 0:
+            exit()
+        else:
+            pass
