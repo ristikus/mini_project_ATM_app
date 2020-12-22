@@ -39,7 +39,9 @@ while True:
             else:
                 print("Maaf, saldo anda tidak mencukupi\n")
         elif selected_menu == 3:
-            pass
+            nominal = int(input("Nominal yang akan disimpan: "))
+            customer.deposit_balance(nominal)
+            print("Saldo anda Rp. " + str(customer.check_balance()) + "\n")
         elif selected_menu == 4:
             pass
         elif selected_menu == 0:

@@ -33,5 +33,5 @@ class Customer:
     def withdraw_balance(self, nominal):
         self.__atm.default_balance -= nominal
 
-    def saving(self, nominal):
-        self.__cust_balace += nominal
+    def deposit_balance(self, nominal):
+        self.__atm.default_balance += nominal
