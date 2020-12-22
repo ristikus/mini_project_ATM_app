@@ -17,9 +17,9 @@ class Customer:
     def cust_pin(self):
         pass
 
-    @cust_pin.getter
-    def cust_pin(self):
-        return self.__atm.default_pin
+    @cust_pin.setter
+    def cust_pin(self, new_pin):
+        self.__atm.default_pin = new_pin
 
     def check_balance(self):
         return self.__atm.default_balance

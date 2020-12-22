@@ -43,7 +43,14 @@ while True:
             customer.deposit_balance(nominal)
             print("Saldo anda Rp. " + str(customer.check_balance()) + "\n")
         elif selected_menu == 4:
-            pass
+            new_pin = int(input("Masukkan pin baru: "))
+            old_pin = int(input("Masukakan pin lama: "))
+
+            if customer.check_pin(old_pin):
+                customer.cust_pin = new_pin
+                print("Pin telah berhasil diganti\n")
+            else:
+                print("Maaf, pin lama yang anda masukkan salah\n")
         elif selected_menu == 0:
             print("")
             break
