@@ -29,3 +29,9 @@ class Customer:
     @cust_balance.getter
     def cust_balance(self):
         return self.__cust_balance
+
+    def debt(self, nominal):
+        self.__cust_balance -= nominal
+
+    def saving(self, nominal):
+        self.__cust_balace += nominal
