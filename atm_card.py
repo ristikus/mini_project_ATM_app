@@ -18,3 +18,7 @@ class ATMCard:
     @default_balance.getter
     def default_balance(self):
         return self.__default_balance
+
+    @default_balance.setter
+    def default_balance(self, balance):
+        self.__default_balance = balance

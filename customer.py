@@ -30,8 +30,8 @@ class Customer:
         else:
             return False
 
-    def debt(self, nominal):
-        self.__cust_balance -= nominal
+    def withdraw_balance(self, nominal):
+        self.__atm.default_balance -= nominal
 
     def saving(self, nominal):
         self.__cust_balace += nominal

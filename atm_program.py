@@ -31,7 +31,13 @@ while True:
         if selected_menu == 1:
             print("Saldo anda Rp. " + str(customer.check_balance()) + "\n")
         elif selected_menu == 2:
-            pass
+            nominal = int(input("Nominal yang akan didebit: "))
+
+            if nominal <= customer.check_balance():
+                customer.withdraw_balance(nominal)
+                print("Sisa saldo anda Rp. " + str(customer.check_balance()) + "\n")
+            else:
+                print("Maaf, saldo anda tidak mencukupi\n")
         elif selected_menu == 3:
             pass
         elif selected_menu == 4:
