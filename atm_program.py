@@ -24,3 +24,7 @@ while True:
         print("3. Simpan")
         print("4. Ganti pin")
         print("0. Keluar")
+        
+        selected_menu = int(input("Pilihan menu: "))
+
+        
