@@ -30,6 +30,12 @@ class Customer:
     def cust_balance(self):
         return self.__cust_balance
 
+    def check_pin(self, input_pin):
+        if self.__cust_pin == input_pin:
+            return True
+        else:
+            return False
+
     def debt(self, nominal):
         self.__cust_balance -= nominal
 
